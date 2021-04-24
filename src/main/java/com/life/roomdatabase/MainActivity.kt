@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity(), INote {
             list?.let {
                 adapter.updaeList(it)
 
+                Toast.makeText(this,"Record is update",Toast.LENGTH_LONG).show()
 
             }
 
